@@ -1,9 +1,10 @@
 require "rubygems"
 require "sinatra/base"
+require "haml"
 
 class MusicCatalog < Sinatra::Base
   get "/" do
-    "Hello From Sinatra Demo"
+    haml :index
   end
 end
 

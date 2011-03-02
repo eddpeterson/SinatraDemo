@@ -1,0 +1,24 @@
+!!!Strict 
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %link{:href => "/css/site.css", :rel => "stylesheet", :type => "text/css"}
+    %title Sinatra Demo
+  %body
+    #container 
+      #header
+        %h1
+          %a{:href => "/"} Sinatra demo
+        %ul#navlist
+          %li.first
+            %a#current{:href => "/"} Home
+          %li
+            %a{:href => "/store/"} Store
+    #content-section
+      #categories
+        Categories...
+      #main
+        = yield
+  #footer
+    built with
+    %a{:href => "http://blablablablablaaaaaa.com"} bla blaa
+	
